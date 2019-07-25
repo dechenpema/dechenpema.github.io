@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="my_styles.css" rel="stylesheet">
+    <script src="myScript.js"> </script>
+    <script language="javascript">
+        function changeImage() {
+
+            var image = document.getElementById("imgClickAndChange");
+
+            if (image.src.match("IMG_2417.jpg"))
+            {
+              image.src = "IMG_2123.jpg";
+            }
+            else if (image.src.match("IMG_2123.jpg"))
+            {
+              image.src = "IMG_4013.jpg";
+            }
+            else if (image.src.match("IMG_4013.jpg"))
+            {
+              image.src = "IMG_4007.jpg";
+            }
+            else {
+              image.src = "IMG_2417.jpg";
+            }
+        }
+    </script>
+
+    <title>Dechen Pema</title>
+  </head>
+
+  <body>
+    <h1> <center> <div id="heading">Dechen Pema</div> </h1>
+
+    <menu>
+      <div class="table">
+        <li><a href=file:///Users/gwc/Documents/webdev/index.html>Home Page</a></li>
+        <li><a href=file:///Users/gwc/Documents/webdev/mycat.html>My Cat</a></li>
+        <li><a href=file:///Users/gwc/Documents/webdev/extracurriculars.html>Extracurriculars</a></li>
+        <li class = "dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Free Time</a>
+        <div class="dropdown-content">
+           <a href=file:///Users/gwc/Documents/webdev/myfriends.html>My Friends</a>
+           <a href=file:///Users/gwc/Documents/webdev/nintendo.html>Nintendo</a>
+        </div>
+          </li>
+       </div>
+    </menu>
+
+    <h2>My Cat</h2>
+    <p>
+      I got my cat on a rainy night in 2015. She was 4 months old at the time. My mom just came home from work with my cat without telling me or my sister.
+      I'm not complaining though I mean look at her (click the image):
+    </p>
+
+    <center>
+      <img width = 750px height = 960px src = "IMG_2417.jpg" alt = "An image of Dechen's calico cat that changes to another picture when you click the image" id="imgClickAndChange" onclick="changeImage()" />
+    </center>
+
+  </body>
+</html>
